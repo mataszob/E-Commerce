@@ -8,6 +8,7 @@
   <title>Library</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,26 @@
           <li><a class="nav__link" href="#">Contact</a></li>
           <li><a class="nav__link nav__link--primary" href="#">Books</a></li>
         </ul>
+
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+            </li>
+            <li class="menu__list">
+              <a href="#features" class="menu__link" onclick="closeMenu()">Books</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Home</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <header>
@@ -27,7 +48,9 @@
         <div class="header__description">
           <h1>Lithuania's most awarded online library platform</h1>
           <h2>Find your dream book with <span class="purple">Library</span></h2>
-          <button class="btn">Browse books</button>
+          <a href="#features">
+            <button class="btn">Browse books</button>
+          </a>
         </div>
         <figure class="header__img--wrapper">
           <img src="./Assets/undraw_reading_time_re_phf7.svg" alt="">
@@ -84,35 +107,272 @@
     <section id="features">
       <div class="container">
         <div class="row">
-            <h2 class="section__title">
-              Featured <span class="purple">Books</span>
-            </h2>
-            <div class="books">
-              <div class="book">
-                <figure>
-                  <img src="" alt="" class="book__img">
-                </figure>
-                <div class="book__title">
-
-                </div>
-                <div class="book__ratings">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </div>
-                <div class="book__price">
-                  <span class="book__price--normal">$59.95</span> $14.95
-                </div>
+          <h2 class="section__title">
+            Featured <span class="purple">Books</span>
+          </h2>
+          <div class="books">
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2versioncontrolcover.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                Version Control
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
               </div>
             </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2americangirlscover.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                Amercian Girls
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2cannibalscover.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                Cannibals In Love
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2gameweplayedcover.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                That Game Well Played During The War
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                <span class="book__price--normal">$59.95</span> $14.95
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
+    <section class="recent">
+      <div class="container">
+        <div class="row">
+          <h2 class="section__title">Latest <span class="purple">Books</span> </h2>
+          <div class="books">
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/0000_richards_mark_cvr-v4b-2_720-phbenrj3y1la4h367k4towftunwdw1998mds7tffrc.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                The River Runs Deep
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                $59.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2imaginemegonecover.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                Imagine Me Gone
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                $59.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2lesserbohemianscover.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                The Lesse Bohemians
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                $59.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2pondartcover.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                Pond
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                $59.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2stargazercover.png" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                The Stargazer's Sister
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                $59.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2undergroundrailroadcover.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                Underground Railroad
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                $59.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/2vegetariancover.png" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                The Vegetarian
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                $59.95
+              </div>
+            </div>
+            <div class="book">
+              <figure>
+                <img src="./Assets/books/71aG+xDKSYL.jpg" alt="" class="book__img">
+              </figure>
+              <div class="book__title">
+                Power
+              </div>
+              <div class="book__ratings">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="book__price">
+                $59.95
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="explore">
+      <div class="container">
+        <div class="row row__column">
+          <h2 class="section__title">Explore more <span class="purple">Books</span></h2>
+          <a href="#features">
+            <button class="btn">Browse books</button>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer>
+    <div class="container">
+      <div class="row row__column">
+        <a href="#">
+          <figure class="footer__logo">
+            <img src="./Assets/library-svgrepo-com.svg" alt="" class="footer__logo--img">
+          </figure>
+        </a>
+        <div class="footer__links">
+          <ul>
+            <li><a class="footer__link" href="#">Home</a></li>
+            <li><a class="footer__link no__cursor" href="#">About</a></li>
+            <li><a class="footer__link" href="#features">Books</a></li>
+            <li><a class="footer__link no__cursor" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__copyright">Copyright &copy; 2022 Library</div>
+      </div>
+    </div>
+    </div>
+  </footer>
 </body>
 
 </html>
